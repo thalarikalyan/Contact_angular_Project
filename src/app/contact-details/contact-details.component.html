@@ -1,0 +1,43 @@
+<app-navigation></app-navigation>
+
+  <!-- Dashboard Content -->
+  <div class="container">
+    <h2 class="text-center mb-4">Contact List</h2>
+    <table class="table table-striped table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Phone</th>
+          <th scope="col">ActiveState</th>
+          <th scope="col">Roles</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contact of contacts">
+          <th scope="row">{{contact.contactId}}</th>
+          <td>{{contact.contactName}}</td>
+          <td>{{contact.contactEmail}}</td>
+          <td>{{contact.contactNum}}</td>
+          <td>{{contact.activesw}}</td>
+          <td>{{contact.roles}}</td>
+          <td>
+            <button class="btn btn-info" (click)="editContacts(contact.contactId)">Edit</button>
+            </td>
+          <td>
+            <button class="btn btn-danger" (click)="deleteContacts(contact.contactId)">Delete</button>
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (jQuery and Popper.js) from CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+

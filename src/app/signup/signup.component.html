@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Signup Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .jumbotron {
+      background-color: hwb(200 11% 11% / 0.295); /* Blue background color */
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+      margin-bottom: 0;
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+    }
+
+    .btn-primary {
+      margin-top: 20px;
+    }
+
+    .btn-secondary {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome to Our Website</h1>
+      <p>We are happy to welcome you</p>
+      <button class="btn btn-primary btn-lg"  (click)="navigateToLoginDetails()">Login</button>
+      <button class="btn btn-secondary btn-lg" (click)="navigateToSignupDetails()">Sign Up</button>
+     
+     </div>
+  
+  </div>
+  <div>
+    
+  </div>
+
+  <!-- Bootstrap JS and jQuery (for optional components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
