@@ -14,6 +14,7 @@ export class ContactDetailsComponent implements OnInit {
   disableEditButton: boolean = false;
   constructor(private contactService:ContactService,private router:Router){}
   ngOnInit(): void {
+  
   this.viewContactDetails();
    
   }
